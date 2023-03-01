@@ -16,6 +16,10 @@
 			margin: 50px auto;
 			max-width: 400px;
 			box-shadow: 0 0 10px #333;
+  height: 200px; /* Set a fixed height for the form */
+  overflow: scroll; /* Enable scrolling for the form */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
 		}
 		label {
 			display: block;
@@ -47,11 +51,38 @@
 		input[type="submit"]:hover {
 			background-color: #6d6d6d;
 		}
+form::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome and Safari */
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.gstatus {
+  margin-left: 10px;
+  color: green;
+}
+.status {
+  margin-left: 10px;
+  color: orange;
+}
+.bstatus {
+  margin-left: 10px;
+  color: red;
+}
+
 	</style>
 </head>
 <body>
-	<form>
-<h2>test2</h2>
-	</form>
+<form>
+  <h2>Working Proxy Links</h2>
+  <h3>_______________________________________</h3>
+
+<div class="container">
+  <h4>test2</h4>
+  <span class="gstatus">[Working]</span>
+</div>
+</form>
 </body>
 </html>
