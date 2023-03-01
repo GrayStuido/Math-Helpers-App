@@ -14,10 +14,9 @@
 			border-radius: 5px;
 			padding: 40px;
 			margin: 100px auto;
-			max-width: 100%;
+			max-width: 1000vh;
 			box-shadow: 0 0 10px #333;
-  height: 100%; /* Set a fixed height for the form */
-  width: 1000px;
+  height: 200px; /* Set a fixed height for the form */
   overflow: scroll; /* Enable scrolling for the form */
   -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
@@ -59,7 +58,10 @@ form::-webkit-scrollbar {
   display: flex;
   align-items: center;
 }
-
+.obcontainer {
+  display: flex;
+  align-items: center;
+}
 .gstatus {
   margin-left: 10px;
   color: green;
@@ -72,18 +74,73 @@ form::-webkit-scrollbar {
   margin-left: 10px;
   color: red;
 }
-
 	</style>
 </head>
 <body>
 <form>
   <h2>Working Proxy Links</h2>
   <h3>_______________________________________</h3>
-
-<div class="container">
-  <h4>test2</h4>
-  <span class="gstatus">[Working]</span>
+  <h2>Void</h2>
+	<div class="container">
+  <h4>https://stealth.wooloo.net/</h4>
+  <span class="gstatus">[⬤]</span>
 </div>
+	<div class="obcontainer">
+  <h4>https://gravity.nelsonshack.com/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+	<div class="obcontainer">
+  <h4>https://wildcard.koakh.com/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+	<div class="obcontainer">
+  <h4>https://net.cloudranger.net/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+  <h2>Rogue</h2>
+<div class="container">
+  <h4>https://math.alphasoft.org/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+<div class="obcontainer">
+  <h4>https://mathlearning.xyz/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+<div class="obcontainer">
+  <h4>https://walter.breakingpar.com/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+<div class="obcontainer">
+  <h4>https://register.datacommunicationsinc.com/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+<div class="obcontainer">
+  <h4>https://dealer.essexregional.org/</h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+<div class="obcontainer">
+  <h4></h4>
+  <span class="gstatus">[⬤]</span>
+</div>
+
 </form>
+</body>
+</html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+</head>
+<body>
+<script>
+    // Initialize Baffle.js on all elements with the 'text' class and start the animation
+    var baffleElements = document.querySelectorAll('.obcontainer');
+    baffleElements.forEach(function(element) {
+      baffle(element, {
+        characters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890[]{}/?.,><;:-_=+`~!@#$%^&*()',
+        speed: 1
+      }).start();
+    });
+</script>
 </body>
 </html>
